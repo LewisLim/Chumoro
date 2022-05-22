@@ -1,0 +1,25 @@
+.header {
+  background-image: url(../img/Banner.jpg) ;
+  background-size:cover;
+    // background-repeat: no-repeat; 
+  height: 50vh;
+  background-position: right top;
+
+
+  @include respond(small) {
+    height: 32vh;
+  }
+
+  // clip-path: polygon(0 0, 100% 0, 100% 30rem, 0 100%);
+  /*Creates shapes off the image*/ 
+  /*clip-path causing too much problems in various window sizes*/
+
+  // &-box {
+  // position: absolute;
+  // top: 30%;
+  // left: 75%;
+  // transform: translate(-50%, -50%);
+  // /*centers the box in the middle instead of the top left*/
+  // text-align: center; }
+
+}

@@ -1,0 +1,40 @@
+
+* {
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: 100%;  //1rem = 10px, 10px/16px = 62.5%  <--use this next time
+  height: 100%;
+  scroll-behavior: smooth;
+
+  @include respond(big-desktop) {
+    font-size: 120%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 80%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+
+  @include respond(phone) {
+    font-size: 80%;
+  }
+
+}
+
+body {
+  padding: 30px; 
+  height: 100%;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+
+}

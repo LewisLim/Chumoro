@@ -1,0 +1,133 @@
+.btn{
+	&:link,
+	&:visited {
+	  text-transform: uppercase;
+	  text-decoration: none; 
+	  padding: 5px 20px;
+	  display: inline-block;
+	  border-radius: 100px;
+	  transition: all .1s;
+	  position: relative; 
+	}
+
+	@include respond(medium){
+		padding: 3px 13px;
+	}
+
+	@include respond(small){
+		padding: 1.5px 7px;
+	}
+
+	&-white {
+	  background-color: $color-white;
+	  color: #777; 
+	
+	  &::after {
+		background-color: $color-white; }
+	}
+
+	&-green {
+      background-color: yellowgreen;
+	  color:white; 
+	
+	  &::after {
+		background-color: yellowgreen; }
+	}
+
+	&:hover {
+	  transform: translateY(-3px);
+	  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	  /*adds a shadow, 3rd value is blur effect, 4th value is color */ }
+
+	&:active {
+	  /* when button is clicked*/
+	  transform: translateY(-1px); }
+
+	&::after {
+	  content: "";
+	  display: inline-block;
+	  height: 100%;
+	  width: 100%;
+	  border-radius: 100px;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: -1;
+	  transition: all .3s; 
+	}
+
+	&:hover::after {
+	  transform: scale(1.1);
+	  opacity: 0; }
+
+	&-animated {
+	  animation: moveInBottom 1.5s .5s;
+	  animation-fill-mode: backwards; }
+
+	&-text {
+		&:visited {
+			font-size: 1rem;
+			color: red;
+			display: inline-block;
+			text-decoration: none; //removes underlines
+			border-bottom: 1px solid $color-orange-1;
+			padding: 3px;
+			word-wrap: break-word;
+
+			@include respond(medium){
+				font-size: .8rem;
+			}
+
+			@include respond(medium){
+				font-size: .6rem;
+			}
+		}
+		&:hover {
+			background-color: $color-orange-1;
+			color: white;
+		}
+	}
+
+	&.fixed_right {
+		position:absolute;
+		top: 14rem;
+		right:20rem;
+	
+		@include respond(medium) {
+			top: 13rem;
+			right:17rem;
+		}
+
+		@include respond(small) {
+			top: 9rem;
+			right:4rem;
+		}
+	}
+}
+
+.success-message{
+	margin-left: 0.7rem;
+	color: white;
+}
+
+.plans-bottom{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#rent {
+	width: 18rem;
+	padding: 1.5rem;
+	margin-top: 1rem;
+	align-items: center;
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.store-message{
+	font-size: 1.5rem;
+	color:yellowgreen;
+	margin-top: .5rem;
+}

@@ -1,0 +1,149 @@
+///////////////////////////////////
+//// Section - Choose Cats / Cat Cafe
+
+.flex-container {
+    display: flex;
+
+    @include respond(large){
+        flex-direction: column; 
+    }
+}
+
+.col-1-of-2 {
+
+    margin: 1rem;
+    
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+
+///////////////////////////////////
+//// Section - Services
+
+.flex-container-2 {
+    margin-top: 10vh;
+    display: flex;
+
+    @include respond(med-large){
+        // flex-direction: column; 
+        flex-wrap: wrap;
+    }
+}
+
+.col-1-of-4 {
+    margin: 10px;
+    text-align: center;
+
+    flex: 1;
+}
+
+
+///////////////////////////////////
+//// Section - Plans
+
+.flex-container-3 {
+    margin-top: 10vh;
+    display: flex;
+
+    @include respond(medium){
+        flex-direction: column; 
+    }
+}
+
+.col-1-of-3 {
+    margin: 10px;
+    text-align: center;
+
+    flex: 1;
+
+    @include respond(small){
+        height: 20rem;
+    }
+}
+
+///////////////////////////////////
+//// Footer
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+
+    background-color: #484848;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    background-color: #484848;
+
+    @include respond(large){
+        flex-direction: column;
+    }
+}
+
+.footer__navigation {
+    flex: 0 0 40%;
+
+    border-top: 2px solid grey;
+    margin-left: 2rem;
+    padding-top: 1rem;
+
+    color: white;
+
+    @include respond(largest){
+        flex: 0 0 45%;
+    }
+
+    @include respond(large){
+        margin: 2rem 8rem;
+    }
+
+    @include respond(med-large){
+        margin: 2rem 4rem;
+    }
+
+    @include respond(medium){
+        margin: 2rem .7rem;
+    }
+}
+
+.footer__disclaimer {
+    flex: 0 0 40%;
+
+    border-top: 2px solid grey;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+
+    color: white;
+    text-align: justify;
+
+    
+    @include respond(largest){
+        flex: 0 0 45%;
+    }
+
+    @include respond(large){
+        margin: 2rem 8rem;
+    }
+
+    @include respond(med-large){
+        margin: 2rem 4rem 6rem 4rem;
+    }
+
+    @include respond(medium){
+        margin: 2rem .7rem 6rem .7rem;
+    }
+}
+
+.footer-nav {
+    display: flex;
+    
+}

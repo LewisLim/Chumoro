@@ -1,0 +1,48 @@
+.footer {
+
+    text-align: center;
+
+    &__icon {
+        font-size: 4rem;
+        color: yellowgreen;
+        margin-top: 2rem;
+    }
+
+    &__brand {
+        font-size: 1.3rem;
+        color: #84B02B;
+        margin-bottom: 1.5rem;
+    }
+    
+    &-nav {
+        display: flex;
+        justify-content: space-around;
+
+        list-style: none;
+        text-align: center;
+
+        @include respond(small){
+            flex-wrap: wrap;
+        }
+        
+        &__link {
+            &:link,
+            &:visited {
+                display: inline;
+                font-size: .8rem;
+                font-weight: 500;
+                padding: .5rem;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase; 
+
+            }
+
+            &:hover,
+            &:active {
+                color: #FD9346;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,100 @@
+
+.section-about {
+    background-color: $color-grey-light-1;
+    padding: 3rem 0;
+}
+
+.section-about-text {
+    background-image: url(../img/heart.jpg);
+    background-size:contain; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 20rem;
+
+    flex-direction: column;
+    
+    @include respond(medium){
+        min-height: 15rem;
+    }
+}
+
+.section-features {
+    background-color: $color-grey-light-1;
+    padding: 3rem 0;
+    //replace background image here
+    background-image: url(../img/wood.jpg);
+    background-size: cover;   
+}
+
+.section-plans {
+    background-color: $color-grey-light-1;
+    padding: 5rem 0 3rem ;
+}
+
+.section-services {
+    background-color: $color-grey-light-1;
+    padding: 3rem 0;
+}
+
+.section-contact {
+    background-color: $color-grey-light-1;
+    padding: 2rem 5rem;
+
+    @include respond(med-large){
+        padding: .5rem 2rem;
+    }
+
+    @include respond(medium){
+        padding: 2rem;
+    }
+
+    @include respond(small){
+        padding: .8rem;
+    }
+}
+
+.contact{
+    background-image: linear-gradient(290deg, 
+                                        rgba(white, .6), 0%,
+                                        rgba(white, .6), 50%, 
+                                        orange 50%) ,
+                                        url(../img/Cat-contact-form.jpg);
+    background-size: cover;   
+    background-position: center center;
+    height: 30rem;
+    border-radius: 20px;
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+
+    @include respond(large){
+        height: 25rem;
+    }
+
+    @include respond(med-large){
+        height: 20rem;
+    }
+
+    @include respond(medium){
+        height: 15rem;
+    }
+
+    @include respond(small){
+        height: 10rem;
+    }
+
+    &__form {
+        width: 50%;
+        padding: 3rem;
+
+        @include respond(medium){
+            height: 1.2rem;
+        }
+
+        @include respond(small){
+            padding: .5rem;
+        }
+    }
+}
+
+
+
+

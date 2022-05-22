@@ -1,0 +1,87 @@
+.card {
+    // perspective: 150rem;
+    // -moz-perspective: 150rem;
+
+    width:100%;   
+    height: 30rem;
+    transition: transform(.3s);
+
+    display: flex;
+    flex-direction: column;
+
+    @include respond(medium){
+        height: 35rem;
+    }
+
+    @include respond(small){
+        height: 25rem;
+    }
+
+    &__photo-1 {
+        background-image: url(../img/pink-cat.jpg);
+        background-size:cover; 
+        background-position:center;
+        border:1rem solid #F086A3;
+        
+    }
+
+    &__photo-2 {
+        background-image: url(../img/yellow-cat.jpg);
+        background-size:cover; 
+        background-position:center;
+        border:1rem solid #FFB582;
+    }
+
+    &__photo-3 {
+        background-image: url(../img/blue-cat.jpg);
+        background-size:cover; 
+        background-position:center;
+        border:1rem solid #00a8f3;
+    }
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &-cafe_1 {
+        background-image: url(../img/Cat-cafe.jpg);
+        background-size:cover; 
+        background-position: center center;
+
+        @include respond(medium){
+            background-position: center left;
+            height: 20rem;
+        }
+
+        @include respond(smallest){
+            height: 15rem;
+        }
+    }
+
+    &-cafe_2 {
+        background-image: url(../img/Cat-for-disabled.jpg);
+        background-size:cover; 
+        
+        @include respond(medium){
+            height: 20rem;
+        }
+
+        @include respond(smallest){
+            height: 15rem;
+        }
+        
+    }
+
+    &__text {
+        font-size: .8rem;
+
+        @include respond(medium){
+            font-size: 1.2rem;
+        }
+
+        @include respond(small){
+            font-size: .8rem;
+        }
+    }
+
+}

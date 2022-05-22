@@ -1,0 +1,69 @@
+.form {
+    
+    line-height: 2rem;
+
+    @include respond(med-large){
+        line-height: 1.5rem;
+    }
+
+    @include respond(medium){
+        line-height: 1rem;
+    }
+
+    @include respond(small){
+        line-height: .5rem;
+    }
+
+    &-group:note(:last-child){
+        margin-bottom: 0rem;
+    }
+
+    &__input{
+        font-size: 1rem;
+        font-family: inherit;
+        padding: 1.5rem 2rem;
+        border-radius: 1px;
+        background-color: rgba(white, .5);
+        border: none;
+        width: 100%;
+        display: block;
+
+        @include respond(med-large){
+            font-size: .8rem;
+            padding: .7rem 1rem;
+        }
+
+        @include respond(medium){
+            font-size: .6rem;
+            padding: .5rem .7rem;
+        }
+
+        @include respond(small){
+            font-size: .6rem;
+            padding: .3rem .5rem;
+        }
+
+        &::-webkit-input-placeholder{ //changes the color of the placeholder
+            color: darkgray;
+        }
+     
+        &:focus{
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+            border-bottom: 3px solid green;
+        
+            &:invalid{
+                border-bottom: 3px solid red;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+

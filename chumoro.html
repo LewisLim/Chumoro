@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="Chumoro/img/favicon-cat.png" />
+        <meta charset="UTF-8">
+        <meta name="description" content="Chumoro, Cat Rental Services. Disability friendly Cat Cafe">
+        <meta name="keywords" content="Cat Rental, HTML, CSS, JavaScript">
+        <meta name="author" content="Lewis Lim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/73848fc75d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Chumoro/css/main.css">
+        
+        <title>Chumoro | Rent a Cute Cat</title>
+    </head>
+    <body>
+        <section class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            <div class="navigation__background">
+                &nbsp;
+            </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>About Chumoro</a></li>
+                    <li class="navigation__item"><a href="#cat" class="navigation__link"><span>02</span>Choose a Cat</a></li>
+                    <li class="navigation__item"><a href="#services" class="navigation__link"><span>03</span>Our Services</a></li>
+                    <li class="navigation__item"><a href="#plans" class="navigation__link"><span>04</span>Browse Plans</a></li>
+                    <li class="navigation__item"><a href="#cafe" class="navigation__link"><span>05</span>Cat Cafe</a></li>
+                </ul>
+            </nav>
+        </section>
+        <header class="header">
+            <div class="header-box">
+                <h1 class="heading">
+                    <span class ="heading-main-about">Chumoro</span>
+                    <span class ="heading-sub-about">Rent a Cat for companionship</span>
+                </h1>
+                <a href="#cat" class="btn btn-white btn-animated fixed_right">Browse some Kittys</a>
+            </div>
+        </header>
+        <main>
+            <section class="section-about" id="cat" >
+                <div class="center-text margin-bottom-80">
+                    <h2 class="heading-secondary">
+                        We Have Many Different Cat Breeds
+                    </h2>
+                </div>
+                <div class="flex-container">
+                    <div class="col-1-of-2 section-about-text">
+                        <h3 class="heading-tertiary heading-white shift-down">12 Cats to choose</h3>
+                        <h3 class="heading-features heading-white">With Big Fat Adorable Eyes</h3>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="composition">
+                            <img src="Chumoro/img/choose-cat-1.jpg" alt="Cat 1" class="composition__photo composition__photo--p1">
+                            <img src="Chumoro/img/choose-cat-2.jpg" alt="Cat 2" class="composition__photo composition__photo--p2">
+                            <img src="Chumoro/img/choose-cat-3.jpg" alt="Cat 3" class="composition__photo composition__photo--p3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-features" id="services">
+                <div class="center-text">
+                    <h2 class="heading-secondary">
+                        What we provide for you
+                    </h2>
+                </div>
+                <div class="flex-container-2">
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="fas fa-air-freshener feature-box__icon hotpink"></i>
+                            <h3 class="heading-features">Shampoo to wash up</h3>
+                            <p class="feature-box__text">A 500ml bottle of shampoo for your furry kid</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="fas fa-fish feature-box__icon skyblue"></i>
+                            <h3 class="heading-features">Yummy Food</h3>
+                            <p class="feature-box__text">A bag of complimentary Cat Food</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="fas fa-baby-carriage feature-box__icon lightseagreen"></i>
+                            <h3 class="heading-features">Carrier to carry</h3>
+                            <p class="feature-box__text">A carriage or hand carrier to bring them home</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-4">
+                        <div class="feature-box">
+                            <i class="fas fa-kiwi-bird feature-box__icon lightsalmon"></i>
+                            <h3 class="heading-features">Toys to play</h3>
+                            <p class="feature-box__text">Up to 5 toys of your choice based on availability</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-plans" id="plans">
+                <div class="center-text">
+                    <h2 class="heading-secondary">
+                        3 Different Plans For You
+                    </h2>
+                </div>
+                <div class="flex-container-3" id="apply">
+                    <div class="col-1-of-3">
+                        <div class = "card card__photo-1">
+                            <h3 class="heading-plans">$30/Week</h3>
+                            <p class="card__text">Not so sure about this cat? <br> Well, you can try and maybe change it after a week.</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class = "card card__photo-2">
+                            <h3 class="heading-plans">$80/Month</h3>
+                            <p class="card__text">This plan is what most people prefer.<br> Cute kitty stays with you for only $2.66 a day :3</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class = "card card__photo-3">
+                            <h3 class="heading-plans">$200/Quarter</h3>
+                            <p class="card__text">Oh i see. You love this kitty so much.<br> We even have a special mystery gift for you!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-bottom">
+                    <a href="#apply" class="btn btn-green btn-animated" id="rent">Rent a Kitty!</a>
+                    <span class="store-message"></span>
+                </div>
+            </section>
+            <section class="section-services" id="cafe">
+                <div class="center-text">
+                    <h2 class="heading-secondary">
+                        Come Visit Us<br>Cat Cafe and Disabilities Friendly
+                    </h2>
+                </div>
+                <div class="flex-container">
+                    <div class="col-1-of-2">
+                        <div class="card card-cafe_1">        
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="card card-cafe_2">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-contact" id="about">
+                <div class="contact">
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            <div class="center-text margin-bottom-80">
+                                <h2 class="heading-contact_form">
+                                    Subscribe to us!
+                                </h2>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                <label for="name" class="form__label"><br></label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                <label for="email" class="form__label"></label>
+                            </div>
+                            <br>
+                            <a href="#about" type="submit" class = "btn btn-green btn-animated" id="submit">Submit</a>
+                            <span class="success-message"></span>
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <i class="fas fa-cat footer__icon"></i>
+                <p class="footer__brand">Chumoro</p>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__navigation">
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#about" class="footer-nav__link">About Us</a></li>
+                        <li class="footer-nav__item"><a href="#cat" class="footer-nav__link">Choose a Cat</a></li>
+                        <li class="footer-nav__item"><a href="#services" class="footer-nav__link">Our Services</a></li>
+                        <li class="footer-nav__item"><a href="#plans" class="footer-nav__link">Browse Plans</a></li>
+                        <li class="footer-nav__item"><a href="#cafe" class="footer-nav__link">Cat Cafe</a></li>
+                    </ul>
+                </div>
+                <article class="footer__disclaimer">
+                    Built by Lewis Lim as his first project through the tutorial in Udemy by Jonas Schmedtmann.
+                    Copyright © by Lewis Lim. 
+                    You may reference this website but please do not claim it as your own design. 
+                    Please give credit to both Lewis Lim and Jonas Schmedtmann.
+                    The website has been redesigned and image licenses were purchased from Freepik.com
+                </article>
+            </div>
+        </footer>
+    </body>
+    <script src="Chumoro/scripts/buttons.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

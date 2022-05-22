@@ -1,0 +1,172 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777777;
+
+}
+
+.heading {
+
+  color: $color-white;
+  text-transform: Uppercase;
+  /*backface-visibility: hidden; removes awkward movements during animations */
+  margin-bottom: 3rem; 
+  float: right;
+  padding-top: 3rem;
+  padding-right: 3rem;
+
+  &-main-about {
+    display: block;
+    /*displays in a block like <p>*/
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    animation-name: moveInLeft;
+    animation-duration: 3s; 
+    
+    @include respond(medium){
+      font-size: 1.5rem; 
+    }
+
+    @include respond(small){
+      font-size: 1.2rem; 
+      text-align: right;
+    }
+
+  }
+
+  &-sub-about {
+    display: block;
+    font-size: 1.2rem;
+    /*vh applies to sizing*/
+    font-weight: 600;
+    /*thickness of font*/
+    letter-spacing: 5px;
+    /*spacing between letters*/
+    overflow: hidden;
+    white-space: nowrap;
+    /*unwraps text*/
+    animation-name: moveInRight;
+    animation-duration: 3s; 
+
+    @include respond(medium){
+      font-size: 1rem; 
+    }
+
+    @include respond(small){
+      font-size: .8rem; 
+      text-align: right;
+      display: none;
+    }
+
+  }
+
+  &-secondary {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    
+    //Color till end of string, instead the whole block 
+    display:inline-block;
+    background-image: linear-gradient(to right,$color-orange-3, $color-orange-1);
+
+    //clip the backgound image to the text itself
+    -webkit-background-clip: text;
+    color: transparent;
+
+    &:hover{
+      transform: skewY(2deg) skewY(0) scale(1.1);
+    }
+
+    @include respond(medium){
+      font-size: 1.4rem; 
+    }
+
+    @include respond(small){
+      font-size: 1.1rem; 
+    }
+
+  }
+
+  &-contact_form {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+    //Color till end of string, instead the whole block 
+    display:inline-block;
+    color: white;
+    &:hover{
+      transform: skewY(2deg) skewY(0) scale(1.1); 
+    }
+
+    @include respond(large){
+      font-size: 1.3rem; 
+    }
+
+    @include respond(med-large){
+      font-size: 1rem; 
+    }
+
+    @include respond(medium){
+      letter-spacing: 0rem;
+      font-size: .7rem; 
+    }
+  }
+
+  &-tertiary {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include respond(medium){
+      font-size: 1.3rem; 
+    }
+    
+  }
+
+  &-features {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: normal;
+
+    @include respond(large){
+      padding: 1.5rem 0;
+    }
+
+    @include respond(med-large){
+      font-size: 1rem;
+    }
+  }
+
+  &-plans {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: normal;
+    padding: 1rem 0;
+
+    @include respond(large){
+      padding: 1.2rem 0;
+    }
+
+    @include respond(small){
+      font-size: 1.2rem;
+    }
+  }
+
+  &-white {
+    color: $color-white;
+  }
+
+}
+
+
+
+
+
