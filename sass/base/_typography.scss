@@ -126,11 +126,16 @@ body {
     @include respond(medium){
       font-size: 1.3rem; 
     }
+
+    @include respond(small){
+      font-size: 1rem; 
+    }
+    
     
   }
 
   &-features {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     font-family: Trebuchet MS, sans-serif;
     line-height: normal;
@@ -139,9 +144,25 @@ body {
       padding: 1.5rem 0;
     }
 
-    @include respond(med-large){
-      font-size: 1rem;
+    @include respond(medium){
+      font-size: 1.3rem; 
     }
+
+    @include respond(small){
+      font-size: 1rem; 
+    }
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: Trebuchet MS, sans-serif;
+    line-height: normal;
+
+    @include respond(large){
+      padding: 1.5rem 0;
+    }
+
   }
 
   &-plans {
@@ -162,6 +183,10 @@ body {
 
   &-white {
     color: $color-white;
+  }
+
+  &-black {
+    color: black;
   }
 
 }

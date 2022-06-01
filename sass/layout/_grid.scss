@@ -11,10 +11,9 @@
 
 .col-1-of-2 {
 
-    margin: 1rem;
+    // margin: 1rem;
     
     display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
 }
@@ -26,18 +25,33 @@
 .flex-container-2 {
     margin-top: 10vh;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-    @include respond(med-large){
-        // flex-direction: column; 
-        flex-wrap: wrap;
+    @include respond(small){
+        flex-direction: column;
     }
+
 }
 
 .col-1-of-4 {
     margin: 10px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
 
-    flex: 1;
+    @include respond(medium){
+        width: 20rem;
+    }
+
+    @include respond(small){
+        margin: 10px 0px;
+    }
+
 }
 
 
@@ -48,7 +62,7 @@
     margin-top: 10vh;
     display: flex;
 
-    @include respond(medium){
+    @include respond(med-large){
         flex-direction: column; 
     }
 }
