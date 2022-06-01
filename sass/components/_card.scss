@@ -10,7 +10,7 @@
     flex-direction: column;
 
     @include respond(med-large){
-        height: 35rem;
+        height: 30rem;
     }
 
     @include respond(small){

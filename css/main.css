@@ -518,7 +518,7 @@ body {
 
 @media (max-width: 53.125em) {
   .card {
-    height: 35rem;
+    height: 30rem;
   }
 }
 
@@ -835,6 +835,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 @media (max-width: 65.625em) {
@@ -847,9 +851,13 @@ body {
 }
 
 .col-1-of-2 {
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
