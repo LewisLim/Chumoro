@@ -37,4 +37,7 @@ body {
     padding: 0;
   }
 
+  @include respond(medium){
+		padding: 0px;
+	}
 }
